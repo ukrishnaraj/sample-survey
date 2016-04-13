@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<script src="jquery-1.12.3.js"></script>
+</head>
+
+<body>
+<label>User name</label>
+<input id="name">
+<label>Password</label>
+<input id="pas">
+<button id="login">login</button>
+
+<script >
+	var name= "admin";
+	var pas= "password";
+	$("#login").click(function(){
+		if($("#name").val()==name&& $("#pas").val()==pas){
+			window.location.href='file:///E:/project/login1.html';
+		} 
+		else if($("#name").val()!=name){ alert("invalid username");}
+		else alert("password incorrect");
+	})
+</script>
+</body>
+</html>

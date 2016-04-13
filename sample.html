@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample survey</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style type="text/css">
+        .container input{
+        	width: 500px;
+        	clear: both;
+        }
+    </style>
+</head>
+<body>
+<form action="/login" method="post" class="box login container">
+<h1>Sample Survey</h1>
+
+<div >
+	<label>Name</label>
+	<input id="name" type="text" class="form-control" name="name" style="50px">
+</div>
+<div >
+	<label>Age</label>
+	<input id="age" type="text" class="form-control" name="age" style="50px">
+</div>
+
+<div >
+	<label>Place</label>
+ 	<input id="place" type="text" class="form-control" name="place" style="50px">
+ </div>
+ <div >
+	<label>Email</label>
+	<input id="email" type="text" class="form-control" name="email" style="50px">
+</div>
+<div >
+	<label>Education</label>
+	<input id="education" type="text" class="form-control" name="education" style="50px">
+</div>
+<div>
+	<label>Job</label>
+	<input id="job" type="text" class="form-control" name="job">
+</div>
+
+<br>
+<button type="submit" onclick="submitFunc()">Submit</button>
+</form>
+
+
+<script type="text/javascript">
+	function submitFunc() {
+		var m= document.getElementById('name').value;
+		if (m=='') alert('Field empty');
+		var n= document.getElementById('age').value;;
+		if (m=='') alert('Field empty');
+		var p= document.getElementById('place').value;
+		if (p=='') alert('Field empty');
+		var q= document.getElementById('email').value;
+		if (q=='') alert('Field empty');
+		var r= document.getElementById('education').value;
+		
+		if (r=='') alert('Field empty');
+		var s= document.getElementById('job').value;;
+		if (s=='') alert('Field empty');
+		else alert('Ok');
+	}
+</script>
+ </body>
+</html>
